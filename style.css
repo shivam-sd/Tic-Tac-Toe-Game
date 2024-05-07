@@ -1,0 +1,356 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #25c96f;
+}
+.container{
+/* border: 2px solid black; */
+height: 70vh;
+width: 70vh;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+@media(max-width:370px){
+    .container{
+        /* border: 2px solid black; */
+        height: 40vh;
+        width: 40vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        }
+}
+@media(max-width:385px){
+    .container{
+        /* border: 2px solid black; */
+        height: 40vh;
+        width: 40vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        }
+}
+@media(max-width:430px){
+    .container{
+        /* border: 2px solid black; */
+        height: 45vh;
+        width: 45vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        }
+}
+
+.game{
+box-shadow: 1px 1px 10px 1px tomato ;
+border-top-left-radius: 30px;
+border-bottom-right-radius: 30px;
+height: 65vh;
+width: 65vh;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+gap: 8px;
+border:5px solid rgb(77, 75, 75);
+
+}
+
+@media(max-width:370px){
+    .game{
+/* box-shadow: 1px 1px 10px 1px tomato ; */
+border-top-left-radius: 10px;
+border-bottom-right-radius: 10px;
+height: 35vh;
+width: 35vh;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+gap: 8px;
+    }
+}
+@media(max-width:385px){
+    .game{
+/* box-shadow: 1px 1px 10px 1px tomato ; */
+border-top-left-radius: 10px;
+border-bottom-right-radius: 10px;
+height: 35vh;
+width: 35vh;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+gap: 8px;
+    }
+}
+@media(max-width:430px){
+    .game{
+/* box-shadow: 1px 1px 10px 1px tomato ; */
+border-top-left-radius: 10px;
+border-bottom-right-radius: 10px;
+height: 40vh;
+width: 40vh;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+gap: 8px;
+    }
+}
+
+.box{
+height: 18vh;
+width: 18vh;
+border-radius: 20px;
+border: none;
+box-shadow: 0 0 0.4rem rgba(0, 0, 0, 0.3);
+color: #b0413e;
+background-color: #ffffc4;
+cursor: pointer;
+font-size: 50px;
+font-weight: 500px;
+border: 5px solid black;
+
+}
+
+@media(max-width:370px){
+    .box{
+height: 9vh;
+width: 9vh;
+border-radius: 8px;
+border: none;
+box-shadow: 0 0 0.4rem rgba(0, 0, 0, 0.3);
+color: maroon;
+background-color: #ffffcf;
+cursor: pointer;
+font-size: 30px;
+font-weight: 500px;
+    }
+}
+@media(max-width:385px){
+    .box{
+height: 9vh;
+width: 9vh;
+border-radius: 8px;
+border: none;
+box-shadow: 0 0 0.4rem rgba(0, 0, 0, 0.3);
+color: maroon;
+background-color: #ffffcf;
+cursor: pointer;
+font-size: 30px;
+font-weight: 500px;
+    }
+}
+@media(max-width:430px){
+    .box{
+height: 11vh;
+width: 11vh;
+border-radius: 8px;
+border: none;
+box-shadow: 0 0 0.4rem rgba(0, 0, 0, 0.3);
+color: maroon;
+background-color: #ffffcf;
+cursor: pointer;
+font-size: 30px;
+font-weight: 500px;
+    }
+}
+.title{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    /* animation: colorfull infinite ease-in-out 1s; */
+    text-transform: uppercase;
+}
+@keyframes colorfull{
+    0%{color: black;}
+    20%{color: red;}
+    40%{color: yellow;}
+    60%{color: greenyellow;}
+    80%{color: maroon;}
+    90%{color: violet;}
+    100%{color: blue;}
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.resetbtn{
+    width: 120px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    font-size: 18px;
+    font-weight: 600px;
+    text-align: center;
+    margin-left: 625px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.resetbtn:hover{
+    background-color: rgb(61, 60, 60);
+    color: rgb(190, 181, 181);
+}
+.new-game{
+width: 110px;
+height: 40px;
+border: none;
+border-radius: 8px;
+background-color: black;
+color: white;
+font-size: 18px;
+font-family: 700;
+margin-left: 625px;
+margin-top: 20px;
+cursor: pointer;
+}
+.new-game:hover{
+    background-color: rgb(61, 60, 60);
+    color: rgb(190, 181, 181);
+
+}
+.mgs-container{
+/* border: 2px solid black; */
+margin-top: 180px;
+}
+p{
+font-size: 80px;
+text-align: center;
+font-weight: 800;
+color: #ffffc4;
+
+}
+@media(max-width:370px){
+    p{
+        font-size: 45px;
+        text-align: center;
+        font-weight: 800;
+        color: yellow;
+          
+    }
+}
+@media(max-width:385px){
+    p{
+        font-size: 45px;
+        text-align: center;
+        font-weight: 800;
+        color: yellow;
+          
+    }
+}
+.hide{
+    display: none;
+}
+marquee{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 800;
+    background: linear-gradient(to bottom right, red, yellow);
+    border-radius: 20px;
+    margin-top: 20px;
+    box-shadow: 0px 0px 5px px #ffffc4;
+}
+marquee:hover{
+    color: white;
+    background-color: yellow;
+}
+marquee::selection{
+    color:red;
+    background-color: yellow;
+}
+
+@media(max-width:710px){
+    .new-game{
+        margin-left: 300px;
+    }
+}
+@media(max-width:710px){
+    .resetbtn{
+        margin-left: 300px;
+    }
+}
+@media(max-width:385px){
+    marquee{
+        width: 350px;
+        margin-left: 5px;
+    }
+}
+@media(max-width:385px){
+    .new-game{
+        margin-left: 140px;
+    }
+}
+@media(max-width:385px){
+    .resetbtn{
+        margin-left: 139px;
+    }
+}
+@media(max-width:385px){
+    marquee{
+        width: 350px;
+        margin-left: 5px;
+    }
+}
+@media(max-width:385px){
+    .new-game{
+        margin-left: 140px;
+    }
+}
+@media(max-width:385px){
+    .resetbtn{
+        margin-left: 139px;
+    }
+}
+
+
+
+
+
+
+
+
+
+@media(max-width:430px){
+    marquee{
+        width: 350px;
+        margin-left: 5px;
+    }
+}
+@media(max-width:430px){
+    .new-game{
+        margin-left: 140px;
+    }
+}
+@media(max-width:430px){
+    .resetbtn{
+        margin-left: 139px;
+    }
+}
+@media(max-width:430px){
+    marquee{
+        width: 350px;
+        margin-left: 5px;
+    }
+}
+@media(max-width:430px){
+    .new-game{
+        margin-left: 128px;
+    }
+}
+@media(max-width:430px){
+    .resetbtn{
+        margin-left: 127px;
+    }
+}
